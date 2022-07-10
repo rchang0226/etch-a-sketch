@@ -18,6 +18,17 @@ function stopHover(e) {
     this.classList.remove('hovering');
 }
 
+function draw(e) {
+    if (e.type == 'mouseover' && !mouseDown) return;
+    this.classList.add('drawn');
+}
+
+let mouseDown = false;
+document.body.onmousedown = () => (mouseDown = true)
+document.body.onmouseup = () => (mouseDown = false)
+
 const grids = document.querySelectorAll('.grid');
 grids.forEach(grid => grid.addEventListener('mouseover', hover));
 grids.forEach(grid => grid.addEventListener('mouseout', stopHover));
+grids.forEach(grid => grid.addEventListener('mousedown', draw));
+grids.forEach(grid => grid.addEventListener('mouseover', draw));

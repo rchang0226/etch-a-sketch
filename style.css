@@ -14,7 +14,7 @@
     border: .2rem solid black;
     margin: 0rem;
     font-size: 1.5rem;
-    transition: all .07s ease;
+    transition: all .01s ease;
     width: 2rem;
     height: 2rem;
     text-align: center;
@@ -27,4 +27,8 @@
     transform: scale(1.1);
     border-color: #ffc600;
     box-shadow: 0 0 1rem #ffc600;
+}
+
+.drawn {
+    background: black;
 }

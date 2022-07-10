@@ -1,22 +1,30 @@
-.container {
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 90vh;
 }
 
+.container {
+    display: flex;
+    width: 60vh;
+    height: 60vh;
+}
+
 .column {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .grid {
-    border: .2rem solid black;
+    border: .1rem solid black;
     margin: 0rem;
     font-size: 1.5rem;
     transition: all .01s ease;
-    width: 2rem;
-    height: 2rem;
+    flex-grow: 1;
+    width: auto;
+    height: auto;
     text-align: center;
     color: white;
     background: rgba(0,0,0,0.4);
@@ -31,4 +39,8 @@
 
 .drawn {
     background: black;
+}
+
+.size {
+    text-align: center;
 }

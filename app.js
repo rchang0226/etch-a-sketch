@@ -9,3 +9,15 @@ for (i = 0; i < 16; i++) {
         column.appendChild(grid);
     }
 }
+
+function hover(e) {
+    this.classList.add('hovering');
+}
+
+function stopHover(e) {
+    this.classList.remove('hovering');
+}
+
+const grids = document.querySelectorAll('.grid');
+grids.forEach(grid => grid.addEventListener('mouseover', hover));
+grids.forEach(grid => grid.addEventListener('mouseout', stopHover));

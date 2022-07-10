@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    border: .2rem solid black;
+    margin: 0rem;
+    font-size: 1.5rem;
+    transition: all .07s ease;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+}
